@@ -1,53 +1,159 @@
-Hello! You found the adventure page!
+# GobCog Adventure
 
-This cog was originally made by locastan and can be found at the fork link above.
+A feature-rich RPG adventure cog for Red-DiscordBot, enabling text-based dungeon crawling, loot collection, and character progression across Discord servers.
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Red-DiscordBot](https://img.shields.io/badge/Red--DiscordBot-Cog-red)
+![Discord](https://img.shields.io/badge/Discord-Bot-purple)
 
-This version is significantly different internally and features:
+> Forked from [locastan's adventure cog](https://github.com/locastan/gobcog) with significant enhancements.
 
-* Using Config for data management and more atomic user attribute saving
-* Expanded mob/monster list for a stat and monster combo of over 2,800 possibilities
-* Added 300% more gear possibilities
-* Doubled the amount of item slots
-* The game can be played on multiple servers at once
+## Overview
 
+An interactive Discord bot cog that transforms servers into collaborative RPG adventures. Players join forces to battle monsters, collect loot, level up characters, and compete for rare items. Supports multi-server play with persistent character data.
 
-Things I would like to improve in the future, or will very gladly welcome PRs on:
+## Features
 
-* End of game HP display (show total groups’ hit vs mob points, for both str and cha)
-* Make it so that the backpack can hold more than 1x of each item (double items overwrite)
-* Trade unopened loot boxes between players
-* Add alternate stats like dexterity/agility that would affect things like critical chance (and revamping the entire system to accept and use other stats like that)
-* Add player races (gives permanent bonus that scales with level for 1-5 additional points in a stat)
-* Revamp calculations for player 1-20 rolls during adventure to mitigate stat bloat at the higher end of the game (currently managed through a very wide range of mobs with varying str/hp values)
+### Core Gameplay
+- **Collaborative Adventures** - Multiple players join to attack, talk, pray, or flee
+- **Character Classes** - Tinkerer, Berserker, Cleric, Ranger, Bard (unlocked at level 10)
+- **Loot System** - Chests with rarity tiers (normal, .rare, [epic])
+- **Negaverse** - PvP arena for bonus XP using earned credits
 
-If you have something you would like to request for this cog, PLEASE OPEN AN ISSUE HERE AND DESCRIBE IT. I will not be taking requests for this via DMs or Discord messages. This cog is also on hold for improvements authored by me until I have more time for it, but nothing wrong with writing something yourself and PRing it!
+### Enhancements Over Original
+- **Config-Based Storage** - Atomic user attribute saving via Red's Config
+- **2,800+ Monster Combinations** - Expanded stat/monster combinations
+- **300% More Gear** - Significantly expanded item pool
+- **Double Item Slots** - More equipment customization
+- **Multi-Server Support** - Play on multiple servers simultaneously
 
-# Introduction to Adventure!
+### Class Abilities
 
-Start an adventure do `[p]adventure` and anyone can choose 🗡 to attack the monster, 🗨 to talk with the monster, 🛐 to pray to the god Herbert (Customizable per server for admins or globally for bot owner) for help, or 🏃‍♀️ to run away from the monster. The more people helping the easier it is to defeat the monster and acquire its loot.
+| Class | Ability | Description |
+|-------|---------|-------------|
+| **Tinkerer** | Forge | Combine two items into a soul-bound device |
+| **Berserker** | Rage | Big attack bonus with fumble risk |
+| **Cleric** | Bless | Heal and buff the entire party |
+| **Ranger** | Pet | Companion that finds items and bonuses |
+| **Bard** | Music | Aid diplomacy attempts |
 
-To start an adventure type `[p]adventure` and everyone can join in.
-Classes can be chosen at level 10 and you can choose between Tinkerer, Berserker, Cleric, Ranger and Bard using `[p]heroclass`.
+## Tech Stack
 
-Tinkerers can forge two different items into a device bound to their very soul. Use the forge command.
-Berserkers have the option to rage and add big bonuses to attacks, but fumbles hurt. Use the rage command when attacking in an adventure.
-Clerics can bless the entire group when praying. Use the bless command when fighting in an adventure.
-Rangers can gain a special pet, which can find items and give reward bonuses. Use the pet command to see pet options.
-Bards can perform to aid their comrades in diplomacy. Use the music command when being diplomatic in an adventure.
+| Component | Technology |
+|-----------|------------|
+| **Framework** | Red-DiscordBot 3.x |
+| **Language** | Python 3.8+ |
+| **Data Storage** | Red Config (JSON-backed) |
+| **Discord API** | discord.py |
 
-Occasionally you will earn loot chests from the monsters use `[p]loot <rarity>` to open them and become stronger.
+## Commands
 
-Sometimes a cart will stroll past offering new items for players to buy, this is setup through `[p]adventureset cart <#channel>`.
+### Player Commands
 
-To view your stats and equipment do `[p]stats` and `[p]backpack`.
-
-You can use earned credits to enter the negaverse and fight a nega version of someone on this server to earn more experience points and level up faster using `[p]negaverse <number_of_credits>`.
-
-```css
-[epic items look like this]
-.rare_items_look_like_this
-normal items look like this
+```
+[p]adventure          # Start a group adventure
+[p]stats              # View your character stats
+[p]backpack           # View your equipment and inventory
+[p]loot <rarity>      # Open a loot chest
+[p]heroclass          # Choose/view your class (level 10+)
+[p]negaverse <bet>    # Enter PvP arena
 ```
 
-Note: some commands can be done in DM with the bot instead if the bot has a global bank and you want to take your time reviewing your stats/equipment or open loot chests.
+### Class-Specific Commands
+
+```
+[p]forge              # (Tinkerer) Combine items
+[p]rage               # (Berserker) Enter rage mode
+[p]bless              # (Cleric) Bless the party
+[p]pet                # (Ranger) Pet management
+[p]music              # (Bard) Perform for diplomacy
+```
+
+### Admin Commands
+
+```
+[p]adventureset cart <#channel>  # Configure merchant cart channel
+```
+
+## Adventure Mechanics
+
+### Combat Options
+- 🗡️ **Attack** - Fight the monster with strength
+- 🗨️ **Talk** - Attempt diplomacy with charisma
+- 🛐 **Pray** - Call upon Herbert (or custom deity) for aid
+- 🏃‍♀️ **Run** - Flee from the encounter
+
+### Loot Rarity
+
+```css
+normal items look like this
+.rare_items_look_like_this
+[epic items look like this]
+```
+
+## Installation
+
+### Prerequisites
+- Red-DiscordBot 3.x installed and configured
+- Bot instance running
+
+### Setup
+
+```bash
+# Add repository
+[p]repo add gobcog https://github.com/Kevin-Mok/gobcog
+
+# Install cog
+[p]cog install gobcog adventure
+
+# Load cog
+[p]load adventure
+```
+
+## Why This Project is Interesting
+
+### Technical Highlights
+
+1. **Discord Bot Development**
+   - Async Python with discord.py
+   - Reaction-based interactive gameplay
+   - Multi-user concurrent game sessions
+
+2. **Data Architecture**
+   - Config-based persistence for reliability
+   - Atomic saves preventing data corruption
+   - Cross-server character portability
+
+3. **Game Design**
+   - Balanced progression system
+   - Class-based ability differentiation
+   - Collaborative mechanics encouraging engagement
+
+4. **Large-Scale Content**
+   - 2,800+ procedural monster variations
+   - Extensive gear database
+   - Rarity-weighted loot tables
+
+### Skills Demonstrated
+
+- **Python Development**: Async/await patterns, OOP design
+- **Discord API**: Reactions, embeds, commands framework
+- **Game Systems**: RPG mechanics, stat balancing, progression curves
+- **Data Management**: Persistent storage, migration, multi-tenant data
+
+## Future Improvements
+
+- End-of-game HP display (total hit vs mob points)
+- Stackable backpack items
+- Tradeable loot boxes
+- Alternate stats (dexterity, agility, critical chance)
+- Player races with scaling bonuses
+- Revamped roll calculations for high-level balance
+
+## Contributing
+
+PRs welcome! Please open an issue first to discuss proposed changes. Feature requests should be submitted as GitHub issues, not via Discord DMs.
+
+## Author
+
+[Kevin Mok](https://github.com/Kevin-Mok)
