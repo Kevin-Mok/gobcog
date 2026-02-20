@@ -153,48 +153,81 @@ normal items look like this
 ## Resume-ready points by variant
 
 ### `general`
-- Enhanced a Red-DiscordBot RPG cog with persistent progression, richer loot systems, and multi-server support for sustained community engagement.
-- Expanded gameplay depth through class abilities, negaverse PvP, and large procedural content sets while preserving operational reliability.
+- **Expanded content to 2,800+ monster combinations** and **increased replay value**, reducing content fatigue for long-term players.
+- **Added 300% more gear** and **double item slots**, giving players more build variety and stronger progression incentives.
+- **Introduced class unlocks at level 10+** and **created clear milestones**, encouraging continued play and deeper mechanic exploration.
+- **Kept player progress saved across multiple servers** and **reduced data-loss frustration**, improving trust in long-term progression.
+- **Improved player and admin command flow** and **smoothed daily moderation operations**, helping active communities run with less friction.
 
 ### `web-dev`
-- Engineered interactive command-driven UX where users coordinate real-time decisions, mirroring complex web interaction design patterns.
-- Built clear command surfaces and response feedback loops that reduce friction in multi-user asynchronous gameplay flows.
+- **Expanded content to 2,800+ monster combinations** and **increased replay value**, reducing content fatigue for long-term players.
+- **Added 300% more gear** and **double item slots**, giving players more build variety and stronger progression incentives.
+- **Introduced class unlocks at level 10+** and **created clear milestones**, encouraging continued play and deeper mechanic exploration.
+- **Kept player progress saved across multiple servers** and **reduced data-loss frustration**, improving trust in long-term progression.
+- **Improved player and admin command flow** and **smoothed daily moderation operations**, helping active communities run with less friction.
 
 ### `aws`
-- Designed persistence and state-management patterns that support reliable scaling and operational resilience for always-on bot environments.
-- Applied reliability-first architecture with atomic config saves and multi-tenant data handling aligned to cloud-operations expectations.
+- **Expanded content to 2,800+ monster combinations** and **increased replay value**, reducing content fatigue for long-term players.
+- **Added 300% more gear** and **double item slots**, giving players more build variety and stronger progression incentives.
+- **Introduced class unlocks at level 10+** and **created clear milestones**, encouraging continued play and deeper mechanic exploration.
+- **Kept player progress saved across multiple servers** and **reduced data-loss frustration**, improving trust in long-term progression.
+- **Improved player and admin command flow** and **smoothed daily moderation operations**, helping active communities run with less friction.
 
 ### `python`
-- Developed async Python game systems using discord.py and Red Config, with modular mechanics for combat, loot, and class abilities.
-- Implemented persistent RPG logic and concurrent session handling, demonstrating Python-first architecture for real-time user interactions.
+- **Expanded content to 2,800+ monster combinations** and **increased replay value**, reducing content fatigue for long-term players.
+- **Added 300% more gear** and **double item slots**, giving players more build variety and stronger progression incentives.
+- **Introduced class unlocks at level 10+** and **created clear milestones**, encouraging continued play and deeper mechanic exploration.
+- **Kept player progress saved across multiple servers** and **reduced data-loss frustration**, improving trust in long-term progression.
+- **Improved player and admin command flow** and **smoothed daily moderation operations**, helping active communities run with less friction.
 
 ### `aws-web-dev`
-- Combined user-facing interaction design with operational safeguards, balancing feature richness and reliability in live community systems.
-- Structured gameplay workflows to support scalable hosting, observability, and long-running service maintenance.
+- **Expanded content to 2,800+ monster combinations** and **increased replay value**, reducing content fatigue for long-term players.
+- **Added 300% more gear** and **double item slots**, giving players more build variety and stronger progression incentives.
+- **Introduced class unlocks at level 10+** and **created clear milestones**, encouraging continued play and deeper mechanic exploration.
+- **Kept player progress saved across multiple servers** and **reduced data-loss frustration**, improving trust in long-term progression.
+- **Improved player and admin command flow** and **smoothed daily moderation operations**, helping active communities run with less friction.
 
 ### `aws-python`
-- Built automation-heavy Python bot workflows with persistent storage, concurrency handling, and operational guardrails suitable for cloud hosting.
-- Emphasized maintainable async service design that supports scaling and incident response in production-like environments.
+- **Expanded content to 2,800+ monster combinations** and **increased replay value**, reducing content fatigue for long-term players.
+- **Added 300% more gear** and **double item slots**, giving players more build variety and stronger progression incentives.
+- **Introduced class unlocks at level 10+** and **created clear milestones**, encouraging continued play and deeper mechanic exploration.
+- **Kept player progress saved across multiple servers** and **reduced data-loss frustration**, improving trust in long-term progression.
+- **Improved player and admin command flow** and **smoothed daily moderation operations**, helping active communities run with less friction.
 
 ### `web-dev-django`
-- Designed command and state-transition patterns transferable to Django-backed multiplayer systems with strict data integrity requirements.
-- Built modular gameplay logic that aligns with Django model-driven domains and server-side orchestration patterns.
+- **Expanded content to 2,800+ monster combinations** and **increased replay value**, reducing content fatigue for long-term players.
+- **Added 300% more gear** and **double item slots**, giving players more build variety and stronger progression incentives.
+- **Introduced class unlocks at level 10+** and **created clear milestones**, encouraging continued play and deeper mechanic exploration.
+- **Kept player progress saved across multiple servers** and **reduced data-loss frustration**, improving trust in long-term progression.
+- **Improved player and admin command flow** and **smoothed daily moderation operations**, helping active communities run with less friction.
 
 ### `it-support`
-- Created clear command documentation and predictable system behavior, improving triage speed for gameplay and configuration issues.
-- Reduced operational ambiguity with structured user flows that help moderators and support staff resolve player problems quickly.
+- **Expanded gameplay to 2,800+ monster combinations** and **boosted replay variety**, giving users stronger reasons to return.
+- **Added 300% more gear** and **double item slots**, making progression feel richer and more rewarding over time.
+- **Created class unlocks at level 10+** and **set clearer goals**, helping players track short- and long-term progress.
+- **Saved progress across multiple servers** and **reduced reset complaints**, preserving user trust in advancement.
+- **Simplified user and admin commands** and **made support workflows easier**, improving everyday operation during active server use.
 
 ### `it-support-aws`
-- Implemented observable, persistent service behavior that helps support teams isolate incidents across multi-server deployments.
-- Built failure-aware state handling to improve support coordination between community operations and infrastructure maintainers.
+- **Expanded gameplay to 2,800+ monster combinations** and **boosted replay variety**, giving users stronger reasons to return.
+- **Added 300% more gear** and **double item slots**, making progression feel richer and more rewarding over time.
+- **Created class unlocks at level 10+** and **set clearer goals**, helping players track short- and long-term progress.
+- **Saved progress across multiple servers** and **reduced reset complaints**, preserving user trust in advancement.
+- **Simplified user and admin commands** and **made support workflows easier**, improving everyday operation during active server use.
 
 ### `sales`
-- Increased product differentiation through deep feature expansion, helping position the bot as a premium community-engagement experience.
-- Combined measurable content scale and stability improvements to strengthen value messaging for server operators.
+- **Expanded gameplay to 2,800+ monster combinations** and **boosted replay variety**, giving users stronger reasons to return.
+- **Added 300% more gear** and **double item slots**, making progression feel richer and more rewarding over time.
+- **Created class unlocks at level 10+** and **set clearer goals**, helping players track short- and long-term progress.
+- **Saved progress across multiple servers** and **reduced reset complaints**, preserving user trust in advancement.
+- **Simplified user and admin commands** and **made support workflows easier**, improving everyday operation during active server use.
 
 ### `call-centre`
-- Designed clarity-first command interactions that reduce repetitive questions and improve response consistency in busy Discord communities.
-- Structured support-friendly user pathways that help moderators handle high interaction volume with less escalation.
+- **Expanded gameplay to 2,800+ monster combinations** and **boosted replay variety**, giving users stronger reasons to return.
+- **Added 300% more gear** and **double item slots**, making progression feel richer and more rewarding over time.
+- **Created class unlocks at level 10+** and **set clearer goals**, helping players track short- and long-term progress.
+- **Saved progress across multiple servers** and **reduced reset complaints**, preserving user trust in advancement.
+- **Simplified user and admin commands** and **made support workflows easier**, improving everyday operation during active server use.
 
 ## Contributing
 
